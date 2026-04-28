@@ -6,6 +6,7 @@ const db = require('./db');
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use('/images', express.static('public/images'));
 
 // Routes
 // 1. Get Profile Info
